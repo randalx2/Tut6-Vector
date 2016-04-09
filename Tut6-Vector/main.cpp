@@ -1,3 +1,6 @@
+//PRANEEL MISTHRY
+// 202515355
+//COMPUTER METHODS 3 Tut6-Vector
 #include <iostream>
 #include <cstdio>
 #include <string>
@@ -28,8 +31,8 @@ int main()
 	cout << "Sorted lowest to highest testVector2: " << endl;
 	printVector(testVector2);
 
-	//The sort function by default sorts from lowes to highest
-	//To sort from highest to lowest use the reverse function
+	//The sort function by default sorts from lowest to highest
+	//To sort from highest to lowest use the reverse function AFTER using the sort function
 	reverse(testVector2.begin(), testVector2.end());
 	
 	//print it out
@@ -92,7 +95,7 @@ void printVector(const vector<int> &myVector)
 {
 	cout << "Vector: ";
 
-	for (unsigned int i = 0; i < myVector.size(); i++)
+	for (unsigned int i = 0; i < myVector.size(); i++) //must use unsigned int for vector loop counter or iterator
 	{
 		cout << myVector[i] << "\t";
 	}
